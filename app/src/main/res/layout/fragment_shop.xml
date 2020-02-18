@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ShopFragment">
+
+    <ImageView
+        android:id="@+id/score_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/_0"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/score_imageview"
+        app:layout_constraintEnd_toEndOf="@+id/score_imageview"
+        app:layout_constraintStart_toStartOf="@+id/score_imageview"
+        app:layout_constraintTop_toTopOf="@+id/score_imageview" />
+
+    <ImageView
+        android:id="@+id/back_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/polkaOne"
+        android:layout_width="349dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/polka"
+        app:layout_constraintBottom_toTopOf="@+id/polkaTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_imageview"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/polkaTwo"
+        android:layout_width="349dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/polka"
+        app:layout_constraintBottom_toTopOf="@+id/polkaThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polkaOne"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/polkaThree"
+        android:layout_width="349dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/polka"
+        app:layout_constraintBottom_toTopOf="@+id/polka_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polkaTwo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/polka_four"
+        android:layout_width="349dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/polka"
+        app:layout_constraintBottom_toTopOf="@+id/score_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polkaThree"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/shop_item_one"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaOne"
+        app:layout_constraintEnd_toEndOf="@+id/polkaOne"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/polkaOne"
+        app:layout_constraintTop_toTopOf="@+id/polkaOne"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+    <ImageView
+        android:id="@+id/shop_item_one2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaOne"
+        app:layout_constraintEnd_toEndOf="@+id/polkaOne"
+        app:layout_constraintStart_toStartOf="@+id/polkaOne"
+        app:layout_constraintTop_toTopOf="@+id/polkaOne"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+    <ImageView
+        android:id="@+id/shop_item_one3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaOne"
+        app:layout_constraintEnd_toEndOf="@+id/polkaOne"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/polkaOne"
+        app:layout_constraintTop_toTopOf="@+id/polkaOne"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+    <ImageView
+        android:id="@+id/shop_item_two"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaTwo"
+        app:layout_constraintEnd_toEndOf="@+id/polkaTwo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/polkaTwo"
+        app:layout_constraintTop_toTopOf="@+id/polkaTwo"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/lopata" />
+
+    <ImageView
+        android:id="@+id/shop_item_two2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaTwo"
+        app:layout_constraintEnd_toEndOf="@+id/polkaTwo"
+        app:layout_constraintStart_toStartOf="@+id/polkaTwo"
+        app:layout_constraintTop_toTopOf="@+id/polkaTwo"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/lopata" />
+
+    <ImageView
+        android:id="@+id/shop_item_two3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaTwo"
+        app:layout_constraintEnd_toEndOf="@+id/polkaTwo"
+        app:layout_constraintStart_toStartOf="@+id/polkaTwo"
+        app:layout_constraintTop_toTopOf="@+id/polkaTwo"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/lopata" />
+
+    <ImageView
+        android:id="@+id/shop_item_three"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaThree"
+        app:layout_constraintEnd_toEndOf="@+id/polkaThree"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/polkaThree"
+        app:layout_constraintTop_toTopOf="@+id/polkaThree"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/meshok" />
+
+    <ImageView
+        android:id="@+id/shop_item_three2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaThree"
+        app:layout_constraintEnd_toEndOf="@+id/polkaThree"
+        app:layout_constraintStart_toStartOf="@id/polkaThree"
+        app:layout_constraintTop_toTopOf="@+id/polkaThree"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/meshok" />
+
+    <ImageView
+        android:id="@+id/shop_item_three3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polkaThree"
+        app:layout_constraintEnd_toEndOf="@+id/polkaThree"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/polkaThree"
+        app:layout_constraintTop_toTopOf="@+id/polkaThree"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/meshok" />
+
+    <ImageView
+        android:id="@+id/shop_item_four"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polka_four"
+        app:layout_constraintEnd_toEndOf="@+id/polka_four"
+        app:layout_constraintStart_toStartOf="@+id/polka_four"
+        app:layout_constraintTop_toTopOf="@+id/polka_four"
+        app:layout_constraintVertical_bias="0.421"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+    <ImageView
+        android:id="@+id/shop_item_four2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polka_four"
+        app:layout_constraintStart_toStartOf="@+id/polka_four"
+        app:layout_constraintTop_toTopOf="@+id/polka_four"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+    <ImageView
+        android:id="@+id/shop_item_four3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/polka_four"
+        app:layout_constraintEnd_toEndOf="@+id/polka_four"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/polka_four"
+        app:layout_constraintTop_toTopOf="@+id/polka_four"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/kartoshka" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
